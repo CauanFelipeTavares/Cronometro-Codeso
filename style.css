@@ -35,9 +35,13 @@ button {
     display: block;
     margin: 0 auto 0 auto;
     cursor: pointer;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
+html {
+    overflow-x: hidden;
+    overflow-y: hidden; 
+}
 
 
 
