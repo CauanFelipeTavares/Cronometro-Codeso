@@ -1,0 +1,26 @@
+main {
+    text-align: center;
+    margin: 10vh 0 20vh 0;
+    font-size: 7ch;
+}
+
+table{
+    margin: auto;
+}
+
+table td {
+    font-size: 5ch;
+}
+
+#final {
+    position: absolute;
+    bottom: 30px;
+}
+
+#ms {
+    min-width: 4.8vw;
+    max-width: 4.8vw;
+}
+
+
+
