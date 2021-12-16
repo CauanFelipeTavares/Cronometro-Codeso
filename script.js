@@ -7,6 +7,9 @@ var quandoVamosNosVerMes = 12
 var atualizacaoDia = 16
 var atualizacaoMes = 12
 
+localStorage.setItem("quandoVamosNosVerHora", quandoVamosNosVerHora)
+localStorage.setItem("quandoVamosNosVerDia", quandoVamosNosVerDia)
+
 //-----------------------------//
 
 //Footer
@@ -24,13 +27,6 @@ var minuto = data.getMinutes()
 var hora = data.getHours()
 var dia = data.getDate()
 var mes = data.getMonth() + 1
-//console.log(ms)
-//console.log(segundo)
-//console.log(minuto)
-//console.log(hora)
-//console.log(dia)
-//console.log(mes)
-
 
 
 //var contaMes = quandoVamosNosVerMes - mes
@@ -48,7 +44,6 @@ if(contaHora < 0){
 }else{
     document.getElementById('horas').innerHTML = contaHora
 }
-//console.log(contaDia)
 
 
 if(contaDia < 10){
@@ -90,8 +85,8 @@ else{
 }
 
 
-//console.log(contaMes)
-//console.log(contaDia)
-//console.log(contaHora)
+//Página Estatísticas
+var Esegundos = contaSegundo + (contaMinuto * 60) + (contaHora * 60 * 60) + (contaDia * 60 * 60 * 24)
+
 },1)
 

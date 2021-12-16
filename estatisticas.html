@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/151/151770.png">
+    <title>Cronômetro Codeso Detalhado</title>
+</head>
+
+<style>
+    h1 {
+        text-align: center;
+        font-size: 4vw;
+        margin-bottom: 15vh;
+    }
+    p {
+        margin: 5vh 1vw;
+        text-align: center;
+    }
+    #Ehoras::after{
+        content: " Horas";
+    }
+    #Eminutos::after{
+        content: " Minutos";
+    }
+    #Esegundos::after{
+        content: " Segundos"
+    }
+    #Ems::after{
+        content: " Milissegundos";
+    }
+    .ou::after{
+        content: "ou";
+    }
+    button {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <a href="index.html">
+        <button>
+            Voltar
+        </button>
+    </a>
+    <h1>Faltam exatamente _______ pra gente se ver!!</h1>
+    <p id="Ehoras"></p>
+    <p class="ou"></p>
+    <p id="Eminutos"></p>
+    <p class="ou"></p>
+    <p id="Esegundos"></p>
+    <p class="ou"></p>
+    <p id="Ems"></p>
+</body>
+
+<script src="estatisticas.js"></script>
+</html>
