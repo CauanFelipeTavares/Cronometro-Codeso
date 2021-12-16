@@ -36,18 +36,27 @@ var mes = data.getMonth() + 1
 //var contaMes = quandoVamosNosVerMes - mes
 
 var contaDia = quandoVamosNosVerDia - dia
+
+var contaHora = quandoVamosNosVerHora - 1 - hora
+if(contaHora < 0){
+    contaHora = contaHora + 24
+    document.getElementById('horas').innerHTML = contaHora
+    contaDia--
+    document.getElementById('dias').innerHTML = contaDia
+}else if(contaHora < 10){
+    document.getElementById('horas').innerHTML = '0' + contaHora
+}else{
+    document.getElementById('horas').innerHTML = contaHora
+}
+
+
 if(contaDia < 10){
     document.getElementById('dias').innerHTML = '0' + contaDia
 }else{
     document.getElementById('dias').innerHTML = contaDia
 }
 
-var contaHora = quandoVamosNosVerHora - 1 - hora
-if(contaHora < 10){
-    document.getElementById('horas').innerHTML = '0' + contaHora
-}else{
-    document.getElementById('horas').innerHTML = contaHora
-}
+
 
 var contaMinuto = 60 - 1 - minuto
 if(contaMinuto < 10){
