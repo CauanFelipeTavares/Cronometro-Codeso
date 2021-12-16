@@ -1,26 +1,43 @@
 main {
     text-align: center;
-    margin: 10vh 0 20vh 0;
-    font-size: 7ch;
+    margin: 5vh 0 15vh 0;
+    font-size: 6vw;
 }
 
 table{
-    margin: auto;
+    margin:10vh auto;
+    max-width: 90%;
+    padding: 1rem;
+    border: 1px solid black;
 }
 
 table td {
-    font-size: 5ch;
+    font-size: 4.5vw;
 }
 
-#final {
-    position: absolute;
-    bottom: 30px;
+#dias, #horas, #minutos, #segundos {
+    font-size: 4.5vw;
+    min-width: 4.5vw;
+    max-width: 4.5vw;
 }
 
 #ms {
-    min-width: 4.8vw;
-    max-width: 4.8vw;
+    font-size: 4.5vw;
+    min-width: 6.75vw;
+    max-width: 6.75vw;
 }
+
+#final {
+    font-size: 1.8vw;
+}
+
+button {
+    display: block;
+    margin: 0 auto 0 auto;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
 
 
 

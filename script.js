@@ -48,12 +48,19 @@ if(contaHora < 0){
 }else{
     document.getElementById('horas').innerHTML = contaHora
 }
+//console.log(contaDia)
 
 
 if(contaDia < 10){
     document.getElementById('dias').innerHTML = '0' + contaDia
 }else{
     document.getElementById('dias').innerHTML = contaDia
+}
+
+if(contaDia = 1){
+    document.getElementById('diaPluralidade').innerHTML = "dia:"
+}else{
+    document.getElementById('diaPluralidade').innerHTML = "dias:"
 }
 
 
