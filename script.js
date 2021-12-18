@@ -89,9 +89,5 @@ else{
     document.getElementById('ms').innerHTML = contaMs
 }
 
-
-//Página Estatísticas
-var Esegundos = contaSegundo + (contaMinuto * 60) + (contaHora * 60 * 60) + (contaDia * 60 * 60 * 24)
-
 },1)
 
