@@ -56,11 +56,12 @@ if(contaDia < 10){
     document.getElementById('dias').innerHTML = contaDia
 }
 
-if(contaDia = 1){
+if(contaDia == 1){
     document.getElementById('diaPluralidade').innerHTML = "dia:"
 }else{
     document.getElementById('diaPluralidade').innerHTML = "dias:"
 }
+
 
 
 
