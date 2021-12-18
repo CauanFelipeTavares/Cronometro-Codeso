@@ -36,9 +36,14 @@ var contaDia = quandoVamosNosVerDia - dia
 var contaHora = quandoVamosNosVerHora - 1 - hora
 if(contaHora < 0){
     contaHora = contaHora + 24
-    document.getElementById('horas').innerHTML = contaHora
+    
     contaDia--
     document.getElementById('dias').innerHTML = contaDia
+    if(contaHora <10){
+        document.getElementById('horas').innerHTML = '0' + contaHora
+    }else{
+        document.getElementById('horas').innerHTML = contaHora
+    }
 }else if(contaHora < 10){
     document.getElementById('horas').innerHTML = '0' + contaHora
 }else{
