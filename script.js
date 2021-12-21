@@ -1,10 +1,10 @@
 //Variáveis de Ambiente
 
 var quandoVamosNosVerHora = 9
-var quandoVamosNosVerDia = 18
+var quandoVamosNosVerDia = 24
 var quandoVamosNosVerMes = 12
 
-var atualizacaoDia = 16
+var atualizacaoDia = 21
 var atualizacaoMes = 12
 
 localStorage.setItem("quandoVamosNosVerHora", quandoVamosNosVerHora)
@@ -87,6 +87,13 @@ if(contaMs < 100){
 }
 else{
     document.getElementById('ms').innerHTML = contaMs
+}
+
+
+if(contaDia < 0){
+    document.getElementById("tabela").style.display = "none"
+    document.getElementById("vazio").innerHTML = "Vi mi amore, até o proximo encontro s2"
+    document.getElementById("estatistic").style.display = "none"
 }
 
 },1)
